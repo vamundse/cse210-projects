@@ -31,7 +31,7 @@ class Scripture
         }
     }
 
-    public void GetNumberToHide(int number)
+    public void SetNumberToHide(int number)
     {
         _numberToHide = number;
     }

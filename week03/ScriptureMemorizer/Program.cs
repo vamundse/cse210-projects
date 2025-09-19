@@ -57,7 +57,7 @@ class Program
 
         // lets the user decide how many words to hide
         Console.Write("How many words would you like to hide per turn? ");
-        newScripture.GetNumberToHide(int.Parse(Console.ReadLine()));
+        newScripture.SetNumberToHide(int.Parse(Console.ReadLine()));
 
         // clears the console and displays the scripture
         Console.Clear();
