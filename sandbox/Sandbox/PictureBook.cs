@@ -1,6 +1,3 @@
-using System.Net;
-using System.Reflection;
-
 public class PictureBook : Book
 {
     private string _illustrator = "";
