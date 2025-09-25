@@ -10,7 +10,7 @@ class Program
         Console.WriteLine("Order number 1");
         Console.WriteLine();
         // creating John Daley as customer and his adress
-        Adress johnAdress = new Adress("Main street 44", "55342 Johnstown", "Iowa", "USA");
+        Address johnAdress = new Address("Main street 44", "55342 Johnstown", "Iowa", "USA");
         Customer johnDayley = new Customer("John Daley", johnAdress);
 
         // adding products to John Daleys basket
@@ -34,7 +34,7 @@ class Program
         Console.WriteLine("Order number 2");
         Console.WriteLine();
         // creating John Daley as customer and his adress
-        Adress marthaAdress = new Adress("Johangate 17", "2000 Lillestrøm", "", "Norway");
+        Address marthaAdress = new Address("Johangate 17", "2000 Lillestrøm", "", "Norway");
         Customer marthaJohansen = new Customer("Martha Johansen", marthaAdress);
 
         // adding products to John Daleys basket

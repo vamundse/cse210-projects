@@ -1,21 +1,21 @@
-class Adress
+class Address
 {
-    private string _streetAdress;
+    private string _streetAddress;
     private string _city;
     private string _stateProvince;
     private string _country;
 
-    public Adress()
+    public Address()
     {
-        _streetAdress = "Unkown";
+        _streetAddress = "Unkown";
         _city = "N/A";
         _stateProvince = "N/A";
         _country = "N/A";
     }
 
-    public Adress(string street, string city, string stateProvice, string country)
+    public Address(string street, string city, string stateProvice, string country)
     {
-        _streetAdress = street;
+        _streetAddress = street;
         _city = city;
         _stateProvince = stateProvice;
         _country = country;
@@ -35,6 +35,6 @@ class Adress
 
     public string DisplayAdress()
     {
-        return $"{_streetAdress}\n{_city}\n{_stateProvince}\n{_country}";
+        return $"{_streetAddress}\n{_city}\n{_stateProvince}\n{_country}";
     }
 }

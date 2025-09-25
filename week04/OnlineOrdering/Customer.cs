@@ -1,17 +1,17 @@
 class Customer
 {
     private string _name;
-    private Adress _adress;
+    private Address _address;
 
     public Customer()
     {
         _name = "No name";
     }
 
-    public Customer(string name, Adress adress)
+    public Customer(string name, Address address)
     {
         _name = name;
-        _adress = adress;
+        _address = address;
     }
 
     public string GetName()
@@ -19,14 +19,14 @@ class Customer
         return _name;
     }
 
-    public Adress GetAdress()
+    public Address GetAddress()
     {
-        return _adress;
+        return _address;
     }
 
     public bool LivesInUSA()
     {
-        if (_adress.CheckUS() == true)
+        if (_address.CheckUS() == true)
         {
             return true;
         }

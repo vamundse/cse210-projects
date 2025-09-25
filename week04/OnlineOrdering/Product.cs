@@ -41,11 +41,6 @@ class Product
         return _quantity;
     }
 
-    public void SetQuantity(int quantity)
-    {
-        _quantity = quantity;
-    }
-
     public double ProductCost()
     {
         double total = (double)_price * _quantity;
