@@ -1,6 +1,3 @@
-using System.Data;
-using System.Diagnostics;
-
 public class Fractions
 {
     private int _top;
