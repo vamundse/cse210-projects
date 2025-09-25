@@ -30,7 +30,6 @@ class Video
         return _comments.Count();
     }
 
-
     public void DisplayVideo()
     {
         Console.WriteLine($"Title: {_title}");
