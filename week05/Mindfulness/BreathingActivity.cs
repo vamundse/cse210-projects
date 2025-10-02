@@ -1,50 +1,51 @@
+/*
+Author: Vegard André Amundsen
+Program: This is the breathing activity for the mindfulness program.
+*/
+
 public class BreathingActivity : Activity
 {
-    private string _name = "Breathing";
-    private string _description = "by walking you through breathing in and out slowly.\nClear your mind and focus on your breathing.";
-
-    public string GetName()
+    // breathing activity
+    public void BreathingExcercise()
     {
-        return _name;
-    }
+        // clears the screen before the activity starts
+        Console.Clear();
 
-    public string GetDescription()
-    {
-        return _description;
-    }
+        // sets name and description variables
+        SetName("Breathing");
+        SetDescription("by walking you through breathing in and out slowly.\nClear your mind and focus on your breathing.");
 
-    public void BreathingExcercise(int sessionTime)
-    {
+        // start message
+        StartingMessage(GetName(), GetDescription());
+        Console.WriteLine();
+
+        // sets time variable
+        Console.Write("How many seconds would you like todays session to last? ");
+        SetTime(int.Parse(Console.ReadLine()));
+
+        // sets the end time
         DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(sessionTime);
+        DateTime endTime = startTime.AddSeconds(GetTime());
 
-        Console.Write("The exercise will start in ");
-            for (int i = 5; i > 0; i--)
-            {
-                Console.Write(i);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
+        // instructions
+        Console.Write($"Get ready ");
+        Spinner(5);
 
         Console.Clear();
 
+        // breathing counter
         while (DateTime.Now < endTime)
         {
             Console.WriteLine("Breathe in...");
-            for (int i = 8; i > 0; i--)
-            {
-                Console.Write(i);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
+            Countdown(8);
             Console.Clear();
+
             Console.WriteLine("Breathe Out..");
-            for (int i = 8; i > 0; i--)
-            {
-                Console.Write(i);
-                Thread.Sleep(1000);
-                Console.Write("\b \b");
-            }
+            Countdown(8);
+            Console.Clear();
         }
+        // end message
+        EndingMessage(GetName());
+        Console.WriteLine();
     }
 }
