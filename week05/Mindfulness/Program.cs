@@ -4,6 +4,7 @@ Program: This is a mindfullness program that gives the user three different ways
 Added functionality:
 - I have made sure that the same follow-up question in the reflection activity will not be used twice.
 - I have made it possible to store the prompt the user was asked so it can be displayed together with the number of things it input.
+- You can decide how long the spinner minimum should spin in the spinner function and how long the countdown should be in the countdown function by adding an argument.
 */
 
 using System;
