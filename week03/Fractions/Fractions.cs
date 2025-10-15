@@ -9,13 +9,13 @@ public class Fractions
         _bottom = 1;
     }
 
-    public void Fraction(int wholeNumber)
+    public Fraction(int wholeNumber)
     {
         SetTop(wholeNumber);
         _bottom = 1;
     }
 
-    public void Fraction(int top, int bottom)
+    public Fraction(int top, int bottom)
     {
         SetTop(top);
         SetBottom(bottom);
