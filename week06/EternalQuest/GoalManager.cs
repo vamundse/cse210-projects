@@ -100,7 +100,7 @@ public class GoalManager
         }
         else
         {
-            Console.WriteLine("You do not have enough point to reach a medal level yet.");
+            Console.WriteLine("You do not have enough points to reach a medal level yet.");
         }
     }
 
@@ -174,6 +174,13 @@ public class GoalManager
             eternal.SetGoalTitle(Console.ReadLine());
             Console.Write("What is the specific goal? ");
             eternal.SetGoalText(Console.ReadLine());
+            int points;
+            do
+            {
+                Console.Write("How many points would you like to award yourself for this goal (max 500)? ");
+                points = int.Parse(Console.ReadLine());
+                eternal.SetGoalPoints(points);
+            } while (points > 500);
             Console.WriteLine();
             Console.WriteLine("You have entered the goal: ");
             Console.WriteLine($"{eternal.GetGoalDetails()}");

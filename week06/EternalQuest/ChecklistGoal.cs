@@ -19,6 +19,16 @@ public class ChecklistGoal : Goal
         if (IsGoalComplete() == true && _repetitions == _completeRepetitions)
         {
             Console.WriteLine($"You have completed the entire goal and the bonus of {_bonus} points has been added.");
+            Console.WriteLine();
+            Console.Write("Do you want to complete this goal again (y/n)?");
+            Console.WriteLine();
+            string choice;
+            choice = Console.ReadLine();
+            if (choice.ToLower() == "y")
+            {
+                int reps = _repetitions;
+                _repetitions += reps;
+            }
         }
     }
 

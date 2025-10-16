@@ -9,7 +9,7 @@ public class EternalGoal : Goal
     // records completion of a goal
     public override void RecordGoalEvent()
     {
-        Console.WriteLine("You will get your reward in heaven.");
+        Console.WriteLine($"Congratulations! You have earned {GetGoalPoints()} points!\nAnd your reward in heaven.");
     }
 
     // checks if the goal is complete, it will never be true
@@ -21,7 +21,7 @@ public class EternalGoal : Goal
     // gets the details of the goal so it can be shown on the screen
     public override string GetGoalDetails()
     {
-        return $"{GetGoalTitle()} ({GetGoalText()}), worth your prize in heaven.";
+        return $"{GetGoalTitle()} ({GetGoalText()}), {GetGoalPoints()} points";
     }
 
     // gets a representation of the goal so that it can be saved in a file

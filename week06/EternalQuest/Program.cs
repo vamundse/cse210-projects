@@ -5,7 +5,8 @@ Program: Lets the user set goals with points and the user can then follow up the
 
 Added functionality: I have made it possible for the user to see what it entered as a goal in one line. I have added bronze, silver, gold and platinum
 levels that the user can reach if it reaches a certain amount of points. I have therefore also set a limit on how many points the user can get for
-each type of goal.
+each type of goal. I have now also added the possibility to repeat checklist goals, so that they can be completed again and the user can recieve the
+points and bonus.
 */
 
 using System;
